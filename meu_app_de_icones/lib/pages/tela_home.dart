@@ -66,7 +66,7 @@ class TelaHome extends State<TeladDesign> {
             textoBotao: 'Ver series',
             cor: Colors.yellow,
             onPressed: () {
-               setState(() {
+              setState(() {
                 mensagem = "Você clicou em Séries";
               });
               Navigator.push(
