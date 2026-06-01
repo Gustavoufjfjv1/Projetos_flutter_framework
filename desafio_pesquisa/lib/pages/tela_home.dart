@@ -101,7 +101,7 @@ class TelaHome extends State<TeladDesign> {
                     ),
                 ),
             ),
-            ElevatedButton(
+            ElevatedButton.icon(
                 onPressed: () {
                     if(!(EmailValidator.validate(email.text))){
                         setState(() {
@@ -118,10 +118,11 @@ class TelaHome extends State<TeladDesign> {
                     };
                 },
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey,
+                    backgroundColor: Colors.blue,
                     foregroundColor: Colors.white,
                 ),
-                child: Text("Enviar"),
+                icon: const Icon(Icons.arrow_forward),
+                label: const Text("Enviar"),
             ),
         ],
       ),
