@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+import 'package:device_preview/device_preview.dart';
+import './pages/tela_login.dart';
+
+void main() {
+  runApp(DevicePreview(
+    builder: (context) => MeuApp(),
+  ));
+}
+
+class MeuApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.deepPurple,
+          secondary: Colors.blue,
+        ),
+      ),
+      home: TeladDesign(),
+    );
+  }
+}
