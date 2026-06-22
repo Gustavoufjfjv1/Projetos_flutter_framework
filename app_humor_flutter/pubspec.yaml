@@ -1,4 +1,4 @@
-name: desafio_pesquisa
+name: app_humor_flutter
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -35,8 +35,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   device_preview: ^1.2.0
-  email_validator: ^3.0.0
-  get: ^4.7.3
 
 dev_dependencies:
   flutter_test:
