@@ -3,7 +3,14 @@
 
 #include <gtk/gtk.h>
 
+<<<<<<< HEAD
 G_DECLARE_FINAL_TYPE(MyApplication, my_application, MY, APPLICATION,
+=======
+G_DECLARE_FINAL_TYPE(MyApplication,
+                     my_application,
+                     MY,
+                     APPLICATION,
+>>>>>>> 5861dadeca77b5235735c39a5248b983475ba88f
                      GtkApplication)
 
 /**

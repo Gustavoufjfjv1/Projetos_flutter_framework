@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
+<<<<<<< HEAD
 import 'pages/tela_cadastro.dart';
+=======
+import './pages/tela_login.dart';
+>>>>>>> 5861dadeca77b5235735c39a5248b983475ba88f
 
 void main() {
   runApp(DevicePreview(

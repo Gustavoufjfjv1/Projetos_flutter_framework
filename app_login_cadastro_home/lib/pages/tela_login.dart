@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:email_validator/email_validator.dart';
+import 'tela_cadastro.dart';
+import 'tela_home.dart';
 
 class TeladDesign extends StatefulWidget {
   @override
@@ -31,6 +33,7 @@ class TelaLogin extends State<TeladDesign> {
       appBar: AppBar(
         title: const Text(
           'Bem-Vindo',
+          'Login',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -47,6 +50,16 @@ class TelaLogin extends State<TeladDesign> {
                 mensagem,
                 style: TextStyle(
                     fontSize: 24,
+          const SizedBox(height: 20),
+           const Icon(
+                Icons.login,
+                size: 80,
+                color: Colors.blue,
+              ),
+            Text(
+                mensagem,
+                style: TextStyle(
+                    fontSize: 20,
                     color: cor,
                     ),
                 ),
@@ -115,6 +128,26 @@ class TelaLogin extends State<TeladDesign> {
                             senha.text = "";
                             cor = Colors.green;
                         });
+                        if(email.text != "" && senha.text != ""){
+                            setState(() {
+                              mensagem = "email valido";
+                              email.text = "";
+                              senha.text = "";
+                              cor = Colors.green;
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => TelaHome()
+                                ),
+                              );
+                            });
+                          }
+                        else {
+                          setState(() {
+                            mensagem = "Um ou mais campos estão em branco";
+                            cor = Colors.red;
+                          });
+                        }
                     };
                 },
                 style: ElevatedButton.styleFrom(
@@ -123,6 +156,23 @@ class TelaLogin extends State<TeladDesign> {
                 ),
                 icon: const Icon(Icons.arrow_forward),
                 label: const Text("Enviar"),
+                label: const Text("Logar"),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => TelaCadastro()
+                    ),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white,
+                ),
+                label: const Text("Não tem login? cadastre-se"),
             ),
         ],
       ),
