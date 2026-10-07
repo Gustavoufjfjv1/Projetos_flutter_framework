@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "856982741419",
+    "project_id": "jujutsu-fire",
+    "storage_bucket": "jujutsu-fire.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856982741419:android:4afd5c9dd1faf61567b2ee",
+        "android_client_info": {
+          "package_name": "com.example.fire_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856982741419-m4b4a12i58glnqut8bn6rqe66el1utmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlWQ08FMsX8fRKvAmoQm-WmkHvAsfInCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856982741419-m4b4a12i58glnqut8bn6rqe66el1utmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

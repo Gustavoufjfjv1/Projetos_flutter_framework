@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "62324189270",
+    "firebase_url": "https://fir-flutter-dee55-default-rtdb.firebaseio.com",
+    "project_id": "fir-flutter-dee55",
+    "storage_bucket": "fir-flutter-dee55.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62324189270:android:205d15e846103c94c233f7",
+        "android_client_info": {
+          "package_name": "com.example.central_missoes_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZV9Hq76hji3htsctZxKhrJTSsFoGXBgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62324189270:android:545b3a5c38f41a42c233f7",
+        "android_client_info": {
+          "package_name": "com.example.fire_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZV9Hq76hji3htsctZxKhrJTSsFoGXBgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
